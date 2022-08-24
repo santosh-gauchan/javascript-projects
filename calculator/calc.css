@@ -1,0 +1,134 @@
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
+body {
+	font-family: arial, sans-serif;
+}
+#calculadora {
+	width:  260px;
+	background-color: #f5f5f5;
+	padding:  20px;
+	margin: 20px auto;
+	border-radius: 10px;
+	border:  1px solid grey;
+	box-shadow: 0px 0px 15px grey;
+	position:  relative;
+	/*display:  none;*/
+}
+#close {
+	position:  absolute;
+	right:  10px;
+	top:  10px;
+	cursor:  pointer;
+	user-select: none;
+}
+#pantalla {
+	border:  none;
+	width:  100%;
+	background-color:  #f5f5f5;
+	text-align: right;
+	font-size: 2rem;
+	padding:  5px;
+	font-weight: bolder;
+	margin: 20px 0;
+}
+.grid_container {
+	display:  grid;
+	grid-template-columns: repeat(4, 50px);
+	grid-gap: 4px;
+}
+.boto {
+	background-color: #fff;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	padding: 5px;
+	border-radius: 5px;
+	user-select: none;
+	cursor:  pointer;
+	box-shadow: 0 0 2px #aaa;
+}
+.seven {
+	grid-column: 1 / 2;
+	grid-row: 1;
+}
+.eight {
+	grid-column: 2/3;
+	grid-row: 1;
+}
+.nine {
+	grid-column: 3/4;
+	grid-row: 1;
+}
+.dividir {
+	grid-column: 4/5;
+	grid-row: 1;
+}
+
+.four {
+	grid-column: 1 / 2;
+	grid-row: 2;
+}
+.five {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+.six {
+	grid-column: 3/4;
+	grid-row: 2;
+}
+
+.multiplica {
+	grid-column: 4/5;
+	grid-row: 2;
+}
+.one {
+	grid-column: 1 / 2;
+	grid-row: 3;
+}
+.two {
+	grid-column: 2/3;
+	grid-row: 3;
+}
+.three {
+	grid-column: 3/4;
+	grid-row: 3;
+}
+.resta {
+	grid-column: 4/5;
+	grid-row: 3;
+}
+
+.signe {
+	grid-column: 1/2;
+	grid-row: 4;
+}
+.zero {
+	grid-column: 2/3;
+	grid-row: 4;
+}
+.coma {
+	grid-column: 3/4;
+	grid-row: 4;
+}
+
+.suma {
+	grid-column: 4/5;
+	grid-row: 4/6;
+}
+
+.clear {
+	grid-column: 1;
+	grid-row: 5;
+}
+
+.igual {
+	grid-column: 2/4;
+	grid-row: 5;
+	background-color: #0067C0;
+	color:  white;
+
+}
