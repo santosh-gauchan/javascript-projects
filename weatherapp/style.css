@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(pkr.jpg);
+    background-size: cover;
+    
+}
+.container {
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgb(192, 209, 92), rgb(72, 209, 152));
+    color: white;
+    margin: 20px auto;
+    box-shadow: 2px 4px 6px black;
+    border-radius: 15px;
+}
+.temp-zone, .city, .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.temp-zone {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.containerSearch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.search {
+    border-radius: 10px;
+    border-color: none;
+    height: 2rem;
+    width: 200px;
+}
